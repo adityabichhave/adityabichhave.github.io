@@ -14,7 +14,14 @@ export default function Skills() {
 
         {/* 🔥 Sticky Heading */}
         <motion.h2
-          className="sticky top-12 text-4xl font-bold text-[#0ef] bg-[#0b132b] py-3 z-30"
+          className="
+    relative md:sticky md:top-12
+    pointer-events-none md:pointer-events-auto
+    text-3xl md:text-4xl
+    font-bold text-[#0ef]
+    bg-[#0b132b] py-3
+    z-30
+  "
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

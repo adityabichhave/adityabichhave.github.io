@@ -50,9 +50,8 @@ export default function Hero() {
 
   return (
     <section
-  id="home"
-  className="w-full bg-[#0b132b] text-white 
-             pt-32 md:pt-24 pb-20 px-4"
+  id="home" className="relative w-full bg-[#0b132b] text-white 
+             pt-32 md:pt-24 pb-20 overflow-hidden"
 >
 
       {/* Neon grid background */}
@@ -124,7 +123,8 @@ export default function Hero() {
         </motion.div>
 
         {/* TEXT CONTENT */}
-        <div className="flex-1 text-left select-none">
+        <div className="flex-1 text-center md:text-left select-none">
+
 
           {/* Name */}
           <motion.h1
@@ -151,7 +151,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-gray-300 text-lg max-w-xl"
+            className="text-gray-300 text-lg max-w-xl mx-auto md:mx-0"
+
           >
             Aspiring Full-Stack Developer & Cybersecurity Enthusiast passionate about building
             modern web applications, solving real-world problems, and exploring advanced
@@ -179,7 +180,10 @@ export default function Hero() {
           </motion.p>
 
           {/* Social + Resume */}
-          <div className="flex items-center gap-6 mt-8">
+          <div className="flex items-center gap-6 mt-8 
+                justify-center md:justify-start
+                flex-wrap">
+
             {/* Resume */}
             <motion.a
               href="/AdityaResume.pdf"

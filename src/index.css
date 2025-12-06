@@ -68,12 +68,26 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* reset */
 html, body {
   margin: 0;
   padding: 0;
   background-color: #0b132b;
+   width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  touch-action: pan-y;
+  
+  overscroll-behavior-x: none;
+}
+body {
+  scrollbar-gutter: stable;
 }
 
 /* optional page fade animation */

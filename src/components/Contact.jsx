@@ -29,7 +29,14 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto">
 
         {/* Contact Header */}
-        <h2 className="text-4xl font-bold text-[#0ef] mb-10">Send a Message</h2>
+        <h2 className="
+    relative md:sticky md:top-12
+    pointer-events-none md:pointer-events-auto
+    text-3xl md:text-4xl
+    font-bold text-[#0ef]
+    bg-[#0b132b] py-3
+    z-30
+  ">Send a Message</h2>
 
         {/* Your Glow Container */}
         <div className="p-10 rounded-3xl shadow-[0_0_30px_#b26bff] bg-[#101b3e]">
